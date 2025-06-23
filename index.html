@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestelle Greens - Artistic Garden Shaping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2e8b57;
+            --secondary-green: #3cb371;
+            --accent-green: #90ee90;
+            --dark-green: #006400;
+            --light-green: #f0fff0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-green);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+        }
+        
+        .palette-icon {
+            color: #fff;
+            background: linear-gradient(45deg, #ff5733, #ffc300, #33ff57, #3385ff, #cc33ff);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .footer-link {
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: var(--accent-green);
+        }
+        
+        .disclaimer-box {
+            border-left: 4px solid var(--primary-green);
+            background-color: rgba(46, 139, 87, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                text-align: center;
+            }
+            
+            .service-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="palette-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <span class="text-2xl font-bold">Nestelle Greens</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                    <a href="privacy.html" class="nav-link">Privacy</a>
+                    <a href="terms.html" class="nav-link">Terms & Conditions</a>
+                    <a href="cookies.html" class="nav-link">Cookies</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="hero-content md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Shape Your Garden's Personality</h1>
+                <p class="text-xl mb-8">
+                    At Nestelle Greens, we believe your outdoor space should be as unique as you are. Our team of master gardeners and landscape artists combine horticultural expertise with artistic vision to create living masterpieces that reflect your personal style. Whether you're looking for a serene retreat, a vibrant entertainment space, or a sculpted work of art, we'll bring your vision to life through our specialized techniques in artistic hedge trimming and color-based garden shaping.
+                </p>
+                <button class="bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                    Book a Consultation
+                </button>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="p1.png" 
+                     alt="Artistic garden design" 
+                     class="rounded-lg shadow-2xl max-w-full h-auto">
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Artistic Services</h2>
+                <div class="w-24 h-1 bg-green-500 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Nestelle Greens offers a comprehensive range of services designed to transform ordinary gardens into extraordinary living artworks. Our approach combines traditional horticultural techniques with innovative artistic methods to create spaces that delight the senses and inspire the soul. Each service is tailored to your specific environment and personal aesthetic preferences.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="palette-icon mb-6">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Artistic Hedge Trimming</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our signature artistic hedge trimming service goes far beyond basic maintenance. We approach each hedge as a blank canvas, sculpting living sculptures that complement your home's architecture and surrounding landscape. Using specialized tools and techniques passed down through generations of European topiary masters, we can create everything from geometric precision to flowing organic forms.
+                    </p>
+                    <ul class="mb-4 text-gray-600">
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Custom designs tailored to your space and personal style</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Seasonal maintenance plans to keep your designs looking sharp year-round</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Eco-friendly techniques that promote plant health while achieving artistic results</li>
+                    </ul>
+                    <img src="s1.jpg" 
+                         alt="Hedge trimming" 
+                         class="rounded-lg w-full h-48 object-cover">
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="palette-icon mb-6">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Color-Based Garden Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our color-based garden design service applies principles of color theory to create stunning visual compositions with plants. We carefully select flowering plants, foliage, and decorative elements based on hue, saturation, and seasonal color changes. The result is a garden that evolves throughout the year like a living painting, with carefully orchestrated blooms that create continuous visual interest and emotional impact.
+                    </p>
+                    <ul class="mb-4 text-gray-600">
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Advanced color theory applied to plant selection and arrangement</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Mood-based garden themes (tranquil, vibrant, romantic, etc.)</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Native plant options that support local ecosystems while providing color impact</li>
+                    </ul>
+                    <img src="s2.jpg" 
+                         alt="Colorful garden" 
+                         class="rounded-lg w-full h-48 object-cover">
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="palette-icon mb-6">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Topiary Artistry</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our topiary artistry service transforms ordinary shrubs and trees into extraordinary living sculptures. Drawing inspiration from classical European gardens, Japanese niwaki traditions, and modern abstract art, we create forms that range from elegant geometric shapes to whimsical characters and architectural elements. Each piece is meticulously maintained to preserve its artistic integrity while promoting healthy plant growth.
+                    </p>
+                    <ul class="mb-4 text-gray-600">
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Traditional geometric forms with mathematical precision</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Whimsical character designs that add personality to your space</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> Architectural elements that complement your home's design features</li>
+                    </ul>
+                    <img src="s3.jpg" 
+                         alt="Topiary art" 
+                         class="rounded-lg w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultant Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Expert Garden Consultation</h2>
+                <div class="w-24 h-1 bg-green-500 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Our certified garden artists combine horticultural expertise with artistic vision to help you realize your outdoor dreams. Each consultation begins with understanding your unique vision, followed by professional assessment and creative solutions tailored to your space and lifestyle. We believe every garden tells a story - let us help you write yours.
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="p2.jpg" 
+                         alt="Garden consultation" 
+                         class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Personalized Garden Assessment</h3>
+                    <p class="text-gray-600 mb-6">
+                        Our comprehensive garden assessment goes beyond basic evaluation to create a complete picture of your outdoor space's potential. We analyze sunlight patterns throughout the day, soil composition and drainage, existing plant health, and architectural features. This holistic approach ensures our designs work in harmony with your environment while achieving your aesthetic goals. We'll discuss your vision, lifestyle needs, and maintenance preferences to create a customized plan that transforms your garden into a living masterpiece.
+                    </p>
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-3">What's Included:</h4>
+                        <ul class="text-gray-600">
+                            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> 90-minute onsite evaluation with our lead garden artist</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Detailed property analysis including microclimate assessment</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Custom design sketches showing proposed transformations</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Comprehensive plant selection guide with care instructions</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Maintenance timeline tailored to your availability</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i> Follow-up recommendations for seasonal adjustments</li>
+                        </ul>
+                    </div>
+                    <button class="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition duration-300">
+                        Schedule Your Consultation
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Seasonal Color Planning</h3>
+                    <p class="text-gray-600 mb-6">
+                        Our seasonal color planning service creates gardens that maintain visual interest throughout the year. We carefully select plants that bloom in sequence, ensuring your outdoor space always has something beautiful to offer. From early spring bulbs to winter berries and evergreen structure, we design for four-season appeal. Our color consultants specialize in creating harmonious palettes that evolve with the seasons, using flowering plants, foliage colors, and decorative elements to maintain visual continuity while celebrating seasonal changes.
+                    </p>
+                    <img src="p4.jpg" 
+                         alt="Seasonal garden" 
+                         class="rounded-lg w-full h-48 object-cover">
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Sustainable Practices </h3>
+                    <p class="text-gray-600 mb-6">
+                        Our commitment to sustainability ensures that your garden is not only beautiful but also environmentally friendly. We prioritize the use of native plants that thrive in your local climate, reducing the need for excessive watering and chemical fertilizers. Our eco-conscious approach includes water-saving techniques, organic maintenance practices, and the promotion of biodiversity. By creating gardens that work in harmony with nature, we help you cultivate a space that is both stunning and sustainable, allowing you to enjoy the beauty of your garden while minimizing your ecological footprint.
+                    </p>
+                    <img src="p5.jpg" 
+                         alt="Sustainable garden" 
+                         class="rounded-lg w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Nestelle Greens</h2>
+                <div class="w-24 h-1 bg-green-500 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    At Nestelle Greens, we believe that gardens are not just spaces; they are living expressions of art and nature. Our mission is to blend horticulture with fine art, creating stunning landscapes that resonate with beauty and tranquility. We are passionate about transforming outdoor spaces into vibrant, artistic landscapes that reflect the unique personality of each client. Our team of skilled horticulturists and artists work collaboratively to bring your garden dreams to life, ensuring that every project is a true reflection of your vision and lifestyle.
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-12">
+                <div class="container mx-auto px-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Our Story</h3>
+                    <p class="text-gray-600 mb-4 text-center mx-auto max-w-2xl">
+                        Founded with a passion for creating beautiful outdoor spaces, Nestelle Greens has grown into a leader in artistic garden design. Our journey began with a simple idea: to enhance the beauty of nature through creativity and innovation. Over the years, we have honed our skills and expanded our knowledge, allowing us to offer a wide range of services that cater to the diverse needs of our clients. Our commitment to sustainability drives us to use eco-friendly practices and native plants, promoting biodiversity while enhancing the beauty of your garden. We believe that every garden has a story to tell, and we are here to help you tell yours through our artistic services.
+                    </p>
+                    <img src="p3.png"
+                         alt="Nestelle Greens team" 
+                         class="rounded-lg w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Client Feedback</h2>
+                <div class="w-24 h-1 bg-green-500 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    We take pride in the satisfaction of our clients and strive to exceed their expectations with every project. Hear what our satisfied clients have to say about their experiences with Nestelle Greens, and discover how we can help you achieve your dream garden.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="testimonial-card p-8 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4">
+                        "Nestelle Greens transformed my dull backyard into a stunning oasis! Their attention to detail and creativity exceeded my expectations. I couldn't be happier! The team was professional, friendly, and truly passionate about their work."
+                    </p>
+                    <h4 class="font-semibold text-gray-800">- Sarah J.</h4>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4">
+                        "The team at Nestelle Greens is incredibly talented. They took my vision and made it a reality, creating a beautiful garden that I enjoy every day. Their expertise and creativity made the entire process enjoyable and stress-free."
+                    </p>
+                    <h4 class="font-semibold text-gray-800">- Mark T.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Gardening Tips</h2>
+                <div class="w-24 h-1 bg-green-500 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Enhance your gardening experience with these simple yet effective tips. Whether you're a seasoned gardener or just starting out, these insights will help you keep your garden thriving and beautiful throughout the seasons.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Water Wisely</h3>
+                    <p class="text-gray-600 mb-4">
+                        Water your plants early in the morning or late in the evening to minimize evaporation and ensure they receive adequate moisture. This practice not only conserves water but also promotes healthier plant growth.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Choose Native Plants</h3>
+                    <p class="text-gray-600 mb-4">
+                        Native plants are adapted to your local climate and soil, making them easier to care for and more beneficial to local wildlife. Incorporating native species into your garden can enhance biodiversity and create a more resilient ecosystem.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Mulch for Moisture</h3>
+                    <p class="text-gray-600 mb-4">
+                        Applying mulch around your plants helps retain moisture, suppress weeds, and improve soil quality as it breaks down. This simple step can significantly reduce the amount of water needed for your garden.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="disclaimer-box p-6 rounded-lg mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Disclaimer</h3>
+                <p class="text-gray-600">
+                    The information provided on this website is for general informational purposes only. While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. Always consult with a professional before making any significant changes to your garden or landscape.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Customer Satisfaction</h2>
+                <div class="w-24 h-1 bg-green-500 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    At Nestelle Greens, we prioritize our clients' satisfaction above all. Our goal is to create gardens that not only meet but exceed your expectations. We value your feedback and continuously strive to improve our services. Your satisfaction is our top priority, and we are committed to delivering exceptional results that you can enjoy for years to come.
+                </p>
+            </div>
+            <p class="text-center text-gray-600">
+                Contact us today to learn more about how we can help you achieve your dream garden! Our team is ready to assist you in creating a beautiful outdoor space that reflects your style and enhances your lifestyle.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">Nestelle Greens</p>
+            <p class="mb-2">4 Washington Square N, New York, NY 10003, USA</p>
+            <p class="mb-2">© 2023 Nestelle Greens. All rights reserved.</p>
+            
+        </div>
+    </footer>
+</body>
+</html>

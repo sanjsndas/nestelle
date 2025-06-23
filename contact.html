@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nestelle Greens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2e8b57;
+            --secondary-green: #3cb371;
+            --accent-green: #90ee90;
+            --dark-green: #006400;
+            --light-green: #f0fff0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-green);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+        }
+        
+        .palette-icon {
+            color: #fff;
+            background: linear-gradient(45deg, #ff5733, #ffc300, #33ff57, #3385ff, #cc33ff);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .footer-link {
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: var(--accent-green);
+        }
+        
+        .disclaimer-box {
+            border-left: 4px solid var(--primary-green);
+            background-color: rgba(46, 139, 87, 0.1);
+        }
+        
+        .contact-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .contact-form {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.375rem;
+            margin-bottom: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-input:focus {
+            border-color: var(--primary-green);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.2);
+        }
+        
+        .form-textarea {
+            min-height: 150px;
+        }
+        
+        .form-submit {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .form-submit:hover {
+            background-color: var(--dark-green);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                text-align: center;
+            }
+            
+            .service-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="palette-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <span class="text-2xl font-bold">Nestelle Greens</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="privacy.html" class="nav-link">Privacy</a>
+                    <a href="terms.html" class="nav-link">Terms & Conditions</a>
+                    <a href="cookies.html" class="nav-link">Cookies</a>
+                    <a href="contact.html" class="nav-link" aria-current="page">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Contact Nestelle Greens</h1>
+            <p class="text-xl max-w-3xl mx-auto">
+                Reach out to our team of garden artists and landscaping experts
+            </p>
+        </div>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="contact-form mb-16">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Full Name*</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email Address*</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-gray-700 mb-2">Subject*</label>
+                                <select id="subject" name="subject" class="form-input" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="consultation">Consultation Request</option>
+                                    <option value="service">Service Inquiry</option>
+                                    <option value="quote">Quote Request</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <label for="message" class="block text-gray-700 mb-2">Your Message*</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" required></textarea>
+                        </div>
+                        <div class="mt-6">
+                            <button type="submit" class="form-submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Comprehensive Contact Information</h2>
+                
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">1. Main Office Contact</h3>
+                    <p class="text-gray-600">
+                        Our main office is located at 4 Washington Square N, New York, NY 10003, USA. You can reach us during business hours (Monday-Friday, 9:00 AM to 5:00 PM EST) at (888) 255-6699. For after-hours inquiries, please leave a voicemail or send us an email at info@nestellegreens.com. Our reception team will return your call within one business day. For urgent matters outside business hours, please use our emergency contact number (available to current clients only).
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">2. Service Inquiries</h3>
+                    <p class="text-gray-600">
+                        For new service inquiries, please contact our dedicated service team at services@nestellegreens.com or call (123) 456-7891. Our service coordinators are available Monday through Saturday from 8:00 AM to 6:00 PM EST. We recommend scheduling consultations at least two weeks in advance during peak seasons. Include details about your property and desired services in your inquiry to help us prepare for your consultation.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">3. Existing Client Support</h3>
+                    <p class="text-gray-600">
+                        Current clients can reach their dedicated account manager directly via email or through our client portal. For general support, contact clientsupport@nestellegreens.com or call (123) 456-7892. Our support team is available Monday-Friday from 8:00 AM to 7:00 PM EST. Please have your client ID ready when calling for faster service. For non-urgent matters, we recommend using email for documentation purposes.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">4. Billing and Payments</h3>
+                    <p class="text-gray-600">
+                        For billing inquiries, payment arrangements, or invoice questions, please contact our billing department at billing@nestellegreens.com or call (123) 456-7893. Our billing specialists are available Monday-Friday from 9:00 AM to 5:00 PM EST. Please include your invoice number in all correspondence. We accept payments via check, credit card, or electronic transfer. Payment terms and options are outlined in your service agreement.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">5. Emergency Services</h3>
+                    <p class="text-gray-600">
+                        For emergency situations requiring immediate attention (such as storm damage to landscaping or irrigation system failures), current clients can call our 24/7 emergency line at (123) 456-7899. This number is monitored continuously by our on-call team. Emergency service rates may apply outside normal business hours. Please reserve this line for genuine emergencies only to ensure we can respond promptly to critical situations.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">6. Media and Press</h3>
+                    <p class="text-gray-600">
+                        Members of the press or media seeking information, interviews, or high-resolution images should contact our PR team at press@nestellegreens.com. Please include your name, media outlet, deadline, and specific request in your inquiry. Our PR team typically responds within 48 hours. For immediate press needs, call (123) 456-7894 during business hours. We welcome opportunities to share our expertise and showcase our work.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">7. Vendor and Supplier Inquiries</h3>
+                    <p class="text-gray-600">
+                        Companies interested in becoming approved vendors or suppliers should email vendorrelations@nestellegreens.com with information about your products or services. Include product catalogs, pricing sheets, and sustainability certifications if applicable. Our procurement team reviews new vendor applications quarterly. Current vendors with order inquiries should contact vendorsupport@nestellegreens.com or call (123) 456-7895 during business hours.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">8. Employment Opportunities</h3>
+                    <p class="text-gray-600">
+                        For career opportunities at Nestelle Greens, please visit our careers page or email careers@nestellegreens.com with your resume and cover letter. Specify the position you're applying for in the subject line. Our HR department reviews applications regularly and will contact qualified candidates for interviews. No phone calls please. We offer competitive compensation, benefits, and opportunities for professional growth in the landscaping industry.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">9. Community Partnerships</h3>
+                    <p class="text-gray-600">
+                        Organizations seeking partnerships for community greening projects, educational programs, or charitable initiatives should email community@nestellegreens.com. We review partnership requests quarterly and prioritize projects aligned with our mission of sustainable, artistic landscaping. Include details about your organization, project goals, timeline, and any funding considerations in your proposal.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">10. General Information</h3>
+                    <p class="text-gray-600">
+                        For all other inquiries not covered by the specific contacts above, please email info@nestellegreens.com or call our main line at (888) 255-6699. Our customer service team will direct your inquiry to the appropriate department. Response times vary based on inquiry volume but we strive to respond to all messages within two business days. You can also visit our FAQ page for answers to common questions about our services.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">11. Mailing Address</h3>
+                    <p class="text-gray-600">
+                        Our official mailing address for correspondence, payments, and legal notices is: Nestelle Greens, 4 Washington Square N, New York, NY 10003, USA. Please allow 5-7 business days for processing of mailed payments. For time-sensitive documents, we recommend using certified mail with return receipt requested. Note that this address is for mail only - all visits to our office require prior appointment scheduling for security and operational reasons.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">12. Office Hours</h3>
+                    <p class="text-gray-600">
+                        Our main office is open to visitors by appointment only, Monday through Friday from 9:00 AM to 5:00 PM EST, excluding major holidays. Administrative staff are available during these hours to assist with inquiries. Our landscaping teams operate Monday through Saturday from 7:00 AM to 6:00 PM, with some seasonal variations. We observe the following holidays: New Year's Day, Memorial Day, Independence Day, Labor Day, Thanksgiving, and Christmas.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">13. Response Times</h3>
+                    <p class="text-gray-600">
+                        We strive to respond to all inquiries promptly based on the following service standards: Phone calls during business hours are typically answered immediately or returned within 4 business hours. Emails receive responses within 24-48 business hours. Service requests submitted through our online form are acknowledged within 24 hours with a more detailed response following within 3 business days. Complex inquiries may require additional time for thorough responses.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">14. International Calls</h3>
+                    <p class="text-gray-600">
+                        For international clients or partners calling from outside the United States, please dial +1 before our main number (888) 255-6699. Note that international call rates may apply based on your service provider. We recommend scheduling calls in advance to account for time zone differences. For cost-effective communication, international clients may prefer to contact us via email or through our website contact forms.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3"> 15. Social Media Engagement</h3>
+                    <p class="text-gray-600">
+                        Connect with us on social media for updates, tips, and inspiration! Follow us on Facebook, Instagram, and Twitter to see our latest projects and engage with our community. We encourage you to share your own gardening experiences and tag us in your posts. Our social media team actively monitors our accounts and responds to messages and comments during business hours. For specific inquiries, please use the contact methods outlined above for a quicker response.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">16. Client Testimonials</h3>
+                    <p class="text-gray-600">
+                        We love hearing from our clients! If you have feedback or a testimonial about your experience with Nestelle Greens, please share it with us via email at testimonials@nestellegreens.com. Your feedback helps us improve our services and allows us to showcase the positive impact we have on our clients' landscapes. We may feature your testimonial on our website or social media, with your permission.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">17. Sustainability Initiatives</h3>
+                    <p class="text-gray-600">
+                        At Nestelle Greens, we are committed to sustainable landscaping practices. If you have questions about our eco-friendly initiatives or want to learn more about how we incorporate sustainability into our services, please contact us at sustainability@nestellegreens.com. We are always looking for ways to improve our environmental impact and welcome suggestions from our community.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">18. Workshops and Events</h3>
+                    <p class="text-gray-600">
+                        We host various workshops and community events throughout the year focused on gardening, landscaping, and sustainability. To stay informed about upcoming events, sign up for our newsletter at newsletter@nestellegreens.com. If you are interested in hosting a workshop or event in partnership with us, please reach out to events@nestellegreens.com with your proposal.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">19. Frequently Asked Questions</h3>
+                    <p class="text-gray-600">
+                        For quick answers to common questions about our services, pricing, and policies, please visit our FAQ page on our website. If you cannot find the information you need, feel free to reach out to us directly via email or phone. We are here to help and ensure you have all the information necessary to make informed decisions about your landscaping needs.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">20. Client Portal Access</h3>
+                    <p class="text-gray-600">
+                        Current clients can access their account information, service history, and invoices through our secure client portal. If you need assistance logging in or have questions about using the portal, please contact our support team at portal@nestellegreens.com. We encourage clients to utilize the portal for easy access to important documents and service updates.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">21. Privacy Concerns</h3>
+                    <p class="text-gray-600">
+                        We take your privacy seriously. If you have concerns about how we handle your personal information or wish to exercise your rights under applicable data protection laws, please contact our privacy officer at privacy@nestellegreens.com. We are committed to transparency and will respond to your inquiries promptly.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">22. Accessibility</h3>
+                    <p class="text-gray-600">
+                        Nestelle Greens is dedicated to ensuring our services and facilities are accessible to all clients. If you have specific accessibility needs or require accommodations for our services, please contact us at accessibility@nestellegreens.com. We will work with you to ensure your experience with us is comfortable and enjoyable.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">23. Feedback on Services</h3>
+                    <p class="text-gray-600">
+                        We value your input on our services. If you have suggestions for improvement or specific feedback about your experience, please share it with us at feedback@nestellegreens.com. Your insights help us enhance our offerings and better serve our clients. We appreciate your time and effort in helping us grow.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">24. Community Involvement</h3>
+                    <p class="text-gray-600">
+                        Nestelle Greens is committed to giving back to the community. If you are aware of local initiatives or organizations that could benefit from our support, please reach out to us at community@nestellegreens.com. We are always looking for ways to contribute positively to our community and support local causes.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">25. Gardening Tips and Resources</h3>
+                    <p class="text-gray-600">
+                        For gardening tips, resources, and inspiration, visit our blog section on our website. We regularly post articles on various topics related to landscaping, plant care, and sustainable practices. If you have specific topics you would like us to cover, please send your suggestions to blog@nestellegreens.com. We love engaging with our community and sharing knowledge.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">26. Seasonal Promotions</h3>
+                    <p class="text-gray-600">
+                        Stay updated on our seasonal promotions and special offers by subscribing to our newsletter. You can sign up at newsletter@nestellegreens.com. We often provide exclusive discounts and early access to new services for our subscribers. Don’t miss out on the opportunity to save on your landscaping needs!
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">27. Referral Program</h3>
+                    <p class="text-gray-600">
+                        We appreciate referrals from our satisfied clients! If you refer a friend or family member to our services, please let us know at referrals@nestellegreens.com. We offer incentives for successful referrals, including discounts on future services. Thank you for helping us grow our community of happy clients!
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">28. Client Satisfaction Guarantee</h3>
+                    <p class="text-gray-600">
+                        At Nestelle Greens, we stand behind our work with a client satisfaction guarantee. If you are not completely satisfied with our services, please contact us within 30 days of service completion at satisfaction@nestellegreens.com. We will work with you to address your concerns and ensure you are happy with the results.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">29. Landscaping Trends</h3>
+                    <p class="text-gray-600">
+                        Interested in the latest landscaping trends? Follow our blog and social media channels for updates on new styles, plants, and techniques. If you have specific questions about trends or want to incorporate them into your landscape, reach out to us at trends@nestellegreens.com. We are here to help you create a beautiful and modern outdoor space.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">30. Plant Care Advice</h3>
+                    <p class="text-gray-600">
+                        For personalized plant care advice, please contact us at plantcare@nestellegreens.com. Our experts are available to provide guidance on plant selection, maintenance, and troubleshooting common issues. We are passionate about helping you achieve a thriving garden and landscape.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">31. Landscape Design Consultations</h3>
+                    <p class="text-gray-600">
+                        If you are considering a landscape design project, we offer consultations to discuss your vision and needs. To schedule a consultation, please contact us at design@nestellegreens.com. Our design team will work with you to create a customized plan that enhances your outdoor space.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">32. Seasonal Clean-Up Services</h3>
+                    <p class="text-gray-600">
+                        We offer seasonal clean-up services to prepare your landscape for the changing seasons. For more information or to schedule a clean-up, please contact us at cleanup@nestellegreens.com. Our team will ensure your property is ready for winter or spring, depending on the season.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">33. Irrigation System Installation</h3>
+                    <p class="text-gray-600">
+                        Interested in installing an irrigation system? Our team specializes in designing and installing efficient irrigation solutions. For inquiries, please contact us at irrigation@nestellegreens.com. We will assess your landscape and recommend the best options for your needs.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">34. Pest Management Services</h3>
+                    <p class="text-gray-600">
+                        If you are experiencing pest issues in your garden or landscape, we offer pest management services to help protect your plants. For more information, please contact us at pestcontrol@nestellegreens.com. Our team will assess the situation and recommend appropriate solutions.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">35. Tree Care Services</h3>
+                    <p class="text-gray-600">
+                        We provide tree care services, including pruning, trimming, and removal. If you need assistance with tree care, please contact us at treecare@nestellegreens.com. Our certified arborists will ensure your trees are healthy and well-maintained.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">36. Hardscaping Services</h3>
+                    <p class="text-gray-600">
+                        Interested in hardscaping features such as patios, walkways, or retaining walls? Our team can help design and install these elements to enhance your outdoor space. For inquiries, please contact us at hardscaping@nestellegreens.com. We will work with you to create functional and beautiful hardscapes.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">37. Landscape Maintenance Plans</h3>
+                    <p class="text-gray-600">
+                        We offer customized landscape maintenance plans to keep your property looking its best year-round. For more information, please contact us at maintenance@nestellegreens.com. Our team will assess your landscape and recommend a plan that fits your needs and budget.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">38. Seasonal Planting Services</h3>
+                    <p class="text-gray-600">
+                        Our seasonal planting services ensure your garden is vibrant and colorful throughout the year. For inquiries about our planting services, please contact us at planting@nestellegreens.com. We will help you select the best plants for your landscape and the season.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">39. Landscape Lighting Services</h3>
+                    <p class="text-gray-600">
+                        Enhance your outdoor space with our landscape lighting services. For more information, please contact us at lighting@nestellegreens.com. Our team will design a lighting plan that highlights your landscape's best features while providing safety and security.
+                    </p>
+                </div>
+
+                <div class="contact-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">40. Final Thoughts</h3>
+                    <p class="text-gray-600">
+                        Thank you for considering Nestelle Greens for your landscaping needs. We are dedicated to providing exceptional service and creating beautiful outdoor spaces. If you have any questions or would like to discuss your project, please do not hesitate to reach out to us. We look forward to hearing from you!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">Nestelle Greens</p>
+            <p class="mb-2">4 Washington Square N, New York, NY 10003, USA</p>
+            <p class="mb-2">Phone: (888) 255-6699</p>
+            <p class="mb-2">© 2023 Nestelle Greens. All rights reserved.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.facebook.com" class="footer-link">Facebook</a>
+                <a href="https://www.instagram.com" class="footer-link">Instagram</a>
+                <a href="https://www.twitter.com" class="footer-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

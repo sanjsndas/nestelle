@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Nestelle Greens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2e8b57;
+            --secondary-green: #3cb371;
+            --accent-green: #90ee90;
+            --dark-green: #006400;
+            --light-green: #f0fff0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-green);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+        }
+        
+        .palette-icon {
+            color: #fff;
+            background: linear-gradient(45deg, #ff5733, #ffc300, #33ff57, #3385ff, #cc33ff);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .footer-link {
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: var(--accent-green);
+        }
+        
+        .disclaimer-box {
+            border-left: 4px solid var(--primary-green);
+            background-color: rgba(46, 139, 87, 0.1);
+        }
+        
+        .terms-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                text-align: center;
+            }
+            
+            .service-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="palette-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <span class="text-2xl font-bold">Nestelle Greens</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="privacy.html" class="nav-link">Privacy</a>
+                    <a href="terms.html" class="nav-link" aria-current="page">Terms & Conditions</a>
+                    <a href="cookies.html" class="nav-link">Cookies</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Terms Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Terms & Conditions</h1>
+            <p class="text-xl max-w-3xl mx-auto">
+                Last Updated: January 1, 2023
+            </p>
+        </div>
+    </header>
+
+    <!-- Terms Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-gray-600 mb-8">
+                    Welcome to Nestelle Greens. These Terms and Conditions outline the rules and regulations for the use of our website and services. By accessing this website and engaging our services, you accept these terms and conditions in full. If you disagree with any part of these terms, you must not use our website or services.
+                </p>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">General Terms</h2>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">1. Acceptance of Terms</h3>
+                    <p class="text-gray-600">
+                        By accessing or using our website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. These terms constitute a legally binding agreement between you and Nestelle Greens. If you do not agree with any part of these terms, you must discontinue use of our services immediately. Your continued use of the website or services constitutes acceptance of these terms as they may be modified from time to time.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">2. Service Description</h3>
+                    <p class="text-gray-600">
+                        Nestelle Greens provides professional landscaping, garden design, and related services as described on our website. Our services include but are not limited to artistic hedge trimming, color-based garden shaping, topiary artistry, and garden maintenance. We reserve the right to modify or discontinue any service at any time without prior notice. All services are subject to availability and the specific terms outlined in individual service agreements.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">3. Eligibility</h3>
+                    <p class="text-gray-600">
+                        Our services are available only to individuals who are 18 years of age or older and who can form legally binding contracts under applicable law. By using our services, you represent and warrant that you meet these eligibility requirements. We may refuse service to anyone for any reason at any time, particularly if we believe the user violates these Terms and Conditions or applicable laws.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">4. User Responsibilities</h3>
+                    <p class="text-gray-600">
+                        Users are responsible for providing accurate and complete information when engaging our services. You agree to cooperate with our professionals, provide necessary access to your property, and fulfill any prerequisites for services as specified in your service agreement. Users must ensure their property complies with local regulations and that they have proper authority to authorize our services on the property.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">5. Modifications to Terms</h3>
+                    <p class="text-gray-600">
+                        We reserve the right to modify these Terms and Conditions at any time. Changes will be effective immediately upon posting to our website. Your continued use of our services following the posting of changes constitutes acceptance of those changes. We encourage you to review these terms periodically for updates. Material changes will be communicated to current clients through email or other direct communication methods.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">6. Account Registration</h3>
+                    <p class="text-gray-600">
+                        Certain features of our services may require account registration. You agree to provide accurate registration information and to keep this information current. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must notify us immediately of any unauthorized use of your account or any other security breaches.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">7. Intellectual Property</h3>
+                    <p class="text-gray-600">
+                        All content on our website, including text, graphics, logos, images, and software, is our property or the property of our licensors and is protected by copyright and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works of any content without our express written permission. Any designs or plans we create remain our intellectual property unless otherwise specified in a written agreement.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">8. Prohibited Conduct</h3>
+                    <p class="text-gray-600">
+                        You agree not to use our website or services for any unlawful purpose or in any way that could damage our reputation or interfere with other users' enjoyment of our services. Prohibited conduct includes but is not limited to: submitting false information, infringing on intellectual property rights, transmitting viruses or malicious code, and attempting to gain unauthorized access to our systems.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">9. Third-Party Links</h3>
+                    <p class="text-gray-600">
+                        Our website may contain links to third-party websites or services that are not owned or controlled by Nestelle Greens. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites. You access these third-party sites at your own risk. We encourage you to review the terms and conditions and privacy policy of any third-party site you visit.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">10. Disclaimer of Warranties</h3>
+                    <p class="text-gray-600">
+                        Our services are provided "as is" without warranty of any kind, either express or implied. We do not guarantee that our services will meet your requirements or be uninterrupted, timely, secure, or error-free. While we strive for excellence in our services, results may vary based on environmental conditions, plant health, and other factors beyond our control. We disclaim all warranties not expressly stated in these terms.
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-12">Services and Payments</h2>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">11. Service Agreements</h3>
+                    <p class="text-gray-600">
+                        Specific terms for individual services will be outlined in separate service agreements or contracts. These agreements will detail the scope of work, timelines, pricing, and other specific terms. In the event of any conflict between these general Terms and Conditions and a specific service agreement, the terms of the service agreement shall prevail. All service agreements incorporate these general terms by reference.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">12. Pricing and Quotes</h3>
+                    <p class="text-gray-600">
+                        Prices for our services are subject to change without notice. Quotes provided are valid for the period specified in the quote (typically 30 days unless otherwise stated). Quotes are based on the information provided by the client and may be adjusted if actual conditions differ significantly from those described by the client or found during initial assessments.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">13. Payment Terms</h3>
+                    <p class="text-gray-600">
+                        Unless otherwise agreed in writing, payment is due upon completion of services or as specified in your service agreement. We accept various payment methods as indicated on our website or invoices. Late payments may be subject to interest charges at the rate of 1.5% per month or the maximum allowed by law. Clients are responsible for all costs of collection, including reasonable attorney fees, for past due accounts.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">14. Cancellation Policy</h3>
+                    <p class="text-gray-600">
+                        Services may be cancelled in accordance with the terms specified in your service agreement. Generally, cancellations require at least 48 hours notice to avoid cancellation fees. For ongoing service contracts, we typically require 30 days written notice for cancellation. Detailed cancellation terms will be provided in individual service agreements. Some services may require non-refundable deposits as specified in the agreement.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">15. Refund Policy</h3>
+                    <p class="text-gray-600">
+                        Refunds are handled on a case-by-case basis and subject to the terms of your service agreement. Generally, refunds are not provided for completed services unless otherwise specified or required by law. For service packages, unused portions may be refunded minus any applicable fees. Requests for refunds must be made in writing within 14 days of service completion. Processing times for approved refunds may vary.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">16. Service Limitations</h3>
+                    <p class="text-gray-600">
+                        Our services are subject to certain limitations based on weather conditions, plant health, site conditions, and other factors beyond our control. While we make every effort to perform services as scheduled, we reserve the right to reschedule services when necessary for safety or quality reasons. We are not responsible for pre-existing conditions of your landscape unless negligence on our part is determined.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">17. Property Access</h3>
+                    <p class="text-gray-600">
+                        You agree to provide our personnel with safe and unobstructed access to the areas where services are to be performed. You must inform us of any hazards (including but not limited to underground utilities, toxic plants, or aggressive animals) that may affect the safety of our personnel. We reserve the right to refuse service if conditions are deemed unsafe or if property access is restricted.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">18. Changes to Services</h3>
+                    <p class="text-gray-600">
+                        Any changes to the scope of services must be agreed upon in writing by both parties. Additional services requested after work has commenced may result in additional charges and may extend completion timelines. We will provide estimates for additional work before proceeding. Changes requested by the client that require rescheduling may be subject to change fees or delays in service completion.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">19. Guarantees and Warranties</h3>
+                    <p class="text-gray-600">
+                        We stand behind the quality of our work and will make reasonable efforts to correct any deficiencies in workmanship brought to our attention within 30 days of service completion. However, we cannot guarantee plant survival as it depends on many factors beyond our control, including weather, pests, diseases, and maintenance after our service. Specific warranties will be detailed in your service agreement.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">20. Maintenance Requirements</h3>
+                    <p class="text-gray-600">
+                        Many of our services require ongoing maintenance to preserve the intended results. We may provide maintenance recommendations, but the client is ultimately responsible for following these guidelines. We are not responsible for deterioration of results caused by failure to perform recommended maintenance. Additional services may be required if maintenance recommendations are not followed.
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-12">Legal and Liability</h2>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">21. Limitation of Liability</h3>
+                    <p class="text-gray-600">
+                        To the maximum extent permitted by law, Nestelle Greens shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services. Our total liability for any claim arising from these terms or our services is limited to the amount you paid us for the specific service giving rise to the claim. Some jurisdictions do not allow limitations of liability, so this limitation may not apply to you. 
+
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">22. Indemnification</h3>
+                    <p class="text-gray-600">
+                        You agree to indemnify, defend, and hold harmless Nestelle Greens, its affiliates, and their respective officers, directors, employees, and agents from any claims, damages, losses, liabilities, costs, or expenses (including reasonable attorney fees) arising out of or related to your use of our services, your violation of these Terms and Conditions, or your infringement of any third-party rights.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">23. Governing Law</h3>
+                    <p class="text-gray-600">
+                        These Terms and Conditions shall be governed by and construed in accordance with the laws of the State of New York, without regard to its conflict of law principles. You agree to submit to the personal jurisdiction of the state and federal courts located in New York County, New York, for the resolution of any disputes arising from these terms or your use of our services.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">24. Dispute Resolution</h3>
+                    <p class="text-gray-600">
+                        Any disputes arising out of or related to these Terms and Conditions or our services shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association. The arbitration shall take place in New York City, and the arbitrator's decision shall be final and binding. You waive any right to a jury trial or to participate in a class action lawsuit.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">25. Force Majeure</h3>
+                    <p class="text-gray-600">
+                        Nestelle Greens shall not be liable for any failure to perform its obligations under these Terms and Conditions if such failure results from any cause beyond our reasonable control, including, but not limited to, mechanical, electronic, or communications failure or degradation. This includes acts of God, war, terrorism, labor disputes, and governmental actions.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">26. Severability</h3>
+                    <p class="text-gray-600">
+                        If any provision of these Terms and Conditions is found to be invalid or unenforceable by a court of competent jurisdiction, the remaining provisions shall remain in full force and effect. The invalid or unenforceable provision shall be deemed modified to the extent necessary to make it valid and enforceable, consistent with the intent of these Terms and Conditions.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">27. Waiver</h3>
+                    <p class="text-gray-600">
+                        The failure of Nestelle Greens to enforce any right or provision of these Terms and Conditions shall not be deemed a waiver of such right or provision. Any waiver of any provision of these terms will be effective only if in writing and signed by an authorized representative of Nestelle Greens.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">28. Entire Agreement</h3>
+                    <p class="text-gray-600">
+                        These Terms and Conditions, along with any service agreements, constitute the entire agreement between you and Nestelle Greens regarding your use of our services. They supersede any prior agreements or understandings, whether written or oral, relating to the subject matter herein. Any modifications to these terms must be made in writing and signed by both parties.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">29. Contact Information</h3>
+                    <p class="text-gray-600">
+                        If you have any questions or concerns about these Terms and Conditions, please contact us at:
+                    </p>
+                    <p class="text-gray-600">
+                        Nestelle Greens<br>
+                        4 Washington Square N, New York, NY 10003, USA<br>
+                        Phone: (888) 255-6699<br>
+                        Email: support@nestellegreens.com
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">30. Feedback and Complaints</h3>
+                    <p class="text-gray-600">
+                        We value your feedback and are committed to addressing any concerns you may have regarding our services. If you believe that we have not adhered to these Terms and Conditions or have any complaints about our handling of your service requests, please contact us using the information provided above. We will investigate your concerns and respond promptly.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">31. Data Protection</h3>
+                    <p class="text-gray-600">
+                        We are committed to protecting your personal information in accordance with applicable data protection laws. Our Privacy Policy outlines how we collect, use, and protect your personal data. By using our services, you consent to the collection and use of your personal information as described in our Privacy Policy.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">32. User Consent</h3>
+                    <p class="text-gray-600">
+                        By using our website and services, you consent to these Terms and Conditions and our Privacy Policy. If you do not agree with our terms, please do not use our website or services. You have the right to withdraw your consent at any time, subject to legal or contractual restrictions.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">33. Changes to Terms</h3>
+                    <p class="text-gray-600">
+                        We may update these Terms and Conditions periodically to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting a notice on our website or sending you an email. We encourage you to review these Terms and Conditions periodically to stay informed about your rights and obligations.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">34. Assignment</h3>
+                    <p class="text-gray-600">
+                        You may not assign or transfer your rights or obligations under these Terms and Conditions without our prior written consent. We may assign or transfer our rights and obligations under these terms without restriction. Any attempted assignment in violation of this provision shall be null and void.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">35. Headings</h3>
+                    <p class="text-gray-600">
+                        The headings in these Terms and Conditions are for convenience only and shall not affect the interpretation of these terms. They do not constitute legal definitions or limitations of the provisions contained herein.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">36. No Partnership</h3>
+                    <p class="text-gray-600">
+                        Nothing in these Terms and Conditions shall be construed as creating a partnership, joint venture, or agency relationship between you and Nestelle Greens. Neither party has the authority to bind the other in any respect.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">37. Force Majeure</h3>
+                    <p class="text-gray-600">
+                        Neither party shall be liable for any failure to perform its obligations under these Terms and Conditions if such failure results from any cause beyond its reasonable control, including, but not limited to, acts of God, war, terrorism, labor disputes, and governmental actions.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">38. Survival</h3>
+                    <p class="text-gray-600">
+                        The provisions of these Terms and Conditions that by their nature should survive termination or expiration shall survive, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">39. Contacting Us</h3>
+                    <p class="text-gray-600">
+                        If you have any questions or concerns about these Terms and Conditions or our services, please contact us at:
+                    </p>
+                    <p class="text-gray-600">
+                        Nestelle Greens<br>
+                        4 Washington Square N, New York, NY 10003, USA<br>
+                        Phone: (888) 255-6699<br>
+                        Email: support@nestellegreens.com
+                    </p>
+                </div>
+
+                <div class="terms-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">40. Acknowledgment</h3>
+                    <p class="text-gray-600">
+                        By using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree to these terms, you must not use our website or services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">Nestelle Greens</p>
+            <p class="mb-2">4 Washington Square N, New York, NY 10003, USA</p>
+            <p class="mb-2">Phone: (888) 255-6699</p>
+            <p class="mb-2">© 2023 Nestelle Greens. All rights reserved.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.facebook.com" class="footer-link">Facebook</a>
+                <a href="https://www.instagram.com" class="footer-link">Instagram</a>
+                <a href="https://www.twitter.com" class="footer-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

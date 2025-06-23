@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Nestelle Greens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2e8b57;
+            --secondary-green: #3cb371;
+            --accent-green: #90ee90;
+            --dark-green: #006400;
+            --light-green: #f0fff0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-green);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+        }
+        
+        .palette-icon {
+            color: #fff;
+            background: linear-gradient(45deg, #ff5733, #ffc300, #33ff57, #3385ff, #cc33ff);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .footer-link {
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: var(--accent-green);
+        }
+        
+        .disclaimer-box {
+            border-left: 4px solid var(--primary-green);
+            background-color: rgba(46, 139, 87, 0.1);
+        }
+        
+        .privacy-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                text-align: center;
+            }
+            
+            .service-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="palette-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <span class="text-2xl font-bold">Nestelle Greens</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="privacy.html" class="nav-link" aria-current="page">Privacy</a>
+                    <a href="terms.html" class="nav-link">Terms & Conditions</a>
+                    <a href="cookies.html" class="nav-link">Cookies</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Privacy Policy Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Privacy Policy</h1>
+            <p class="text-xl max-w-3xl mx-auto">
+                Last Updated: January 1, 2023
+            </p>
+        </div>
+    </header>
+
+    <!-- Privacy Policy Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-gray-600 mb-8">
+                    At Nestelle Greens, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website or use our services. By accessing our website, you agree to the collection and use of information in accordance with this policy.
+                </p>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Information We Collect</h2>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">1. Personal Identification Information</h3>
+                    <p class="text-gray-600">
+                        We may collect personal identification information such as your name, email address, phone number, and mailing address when you voluntarily submit it through our contact forms, service requests, or newsletter subscriptions. This information is used solely for the purpose of providing our services and communicating with you about your inquiries or projects. We never share this information with third parties without your explicit consent, except as required by law or as necessary to fulfill our contractual obligations to you.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">2. Non-Personal Identification Information</h3>
+                    <p class="text-gray-600">
+                        We automatically collect non-personal identification information about your interaction with our website, including browser type, operating system, IP address, and pages visited. This data helps us analyze trends, administer the site, track user movements, and gather demographic information for aggregate use. This information is collected through cookies and similar tracking technologies and is used to improve our website's functionality and user experience while maintaining your anonymity.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">3. Payment Information</h3>
+                    <p class="text-gray-600">
+                        For services requiring payment, we collect necessary billing information including credit card numbers, expiration dates, and security codes. All payment transactions are processed through secure, PCI-compliant third-party payment processors. We do not store complete credit card information on our servers, ensuring maximum security for your financial data. Transaction records are maintained for accounting purposes and to resolve any potential disputes regarding services rendered.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">4. Project-Specific Information</h3>
+                    <p class="text-gray-600">
+                        When you engage our services, we may collect detailed information about your property, garden specifications, design preferences, and other project-related details. This information is used exclusively for planning and executing your landscaping project and is shared only with our team members directly involved in your project. We maintain strict confidentiality regarding all client project details and property information.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">5. Communication Records</h3>
+                    <p class="text-gray-600">
+                        We keep records of our communications with you, including emails, phone calls, and service requests. These records help us provide better customer service, maintain accurate project documentation, and resolve any potential disputes. All communication records are stored securely and accessed only by authorized personnel who need this information to perform their job responsibilities effectively.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">6. Website Analytics</h3>
+                    <p class="text-gray-600">
+                        We use third-party analytics services like Google Analytics to collect information about how visitors use our website. This includes data about page views, time spent on pages, click patterns, and navigation paths. The analytics data helps us understand user behavior and improve our website's content and structure. The information collected is aggregated and anonymized, not tied to individual users.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">7. Cookies and Tracking Technologies</h3>
+                    <p class="text-gray-600">
+                        Our website uses cookies and similar tracking technologies to enhance user experience, analyze trends, and administer the site. Cookies are small data files stored on your device that help us remember your preferences and understand how you interact with our content. You can control cookie settings through your browser preferences, though disabling cookies may affect certain website functionalities.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">8. Third-Party Services</h3>
+                    <p class="text-gray-600">
+                        We may use various third-party services such as email marketing platforms, customer relationship management systems, and project management tools that process limited personal data. These services are carefully selected for their security and privacy standards and are used only to facilitate our business operations and improve service delivery. We ensure all third-party providers comply with applicable data protection regulations.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">9. Social Media Integration</h3>
+                    <p class="text-gray-600">
+                        Our website may include social media features like Facebook buttons and widgets that may collect your IP address and set cookies. These features are hosted by third parties and governed by their privacy policies. We encourage you to review the privacy policies of any social media platforms you interact with through our site to understand how your information may be collected and used by these services.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">10. Children's Information</h3>
+                    <p class="text-gray-600">
+                        Our services are not directed to children under 13, and we do not knowingly collect personal information from children. If we discover that a child under 13 has provided us with personal information, we will immediately delete this information from our servers. Parents or guardians who believe their child may have submitted personal information to us should contact us immediately for assistance in removing such data.
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-12">How We Use Your Information</h2>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">11. Service Provision</h3>
+                    <p class="text-gray-600">
+                        We use your personal information primarily to provide the landscaping and garden design services you request. This includes processing service inquiries, scheduling consultations, creating design plans, executing projects, and providing maintenance services. Your information helps us tailor our services to your specific needs and preferences, ensuring we deliver results that meet or exceed your expectations.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">12. Communication</h3>
+                    <p class="text-gray-600">
+                        Your contact information allows us to respond to your inquiries, provide service updates, send important notices about your projects, and share relevant information about our services. We may use your email address to send periodic newsletters or promotional materials, but you can opt out of marketing communications at any time by following the unsubscribe instructions included in each email or by contacting us directly.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">13. Website Improvement</h3>
+                    <p class="text-gray-600">
+                        The non-personal information we collect helps us analyze website usage patterns, identify popular content, and detect technical issues. This data informs our decisions about website design improvements, content creation, and feature development. By understanding how visitors interact with our site, we can optimize the user experience and make our services more accessible and valuable to our clients.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">14. Marketing and Advertising</h3>
+                    <p class="text-gray-600">
+                        With your consent, we may use your information to personalize marketing messages and deliver targeted advertisements about our services. This may include displaying relevant content on social media platforms or other websites you visit. We never sell your personal information to third parties for marketing purposes, and you can adjust your marketing preferences at any time through your account settings or by contacting us.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">15. Legal Compliance</h3>
+                    <p class="text-gray-600">
+                        We may use or disclose your information when required by law, such as in response to subpoenas, court orders, or other legal processes. This includes situations where we believe disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request. We will make reasonable efforts to notify you about such disclosures when permitted by law.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">16. Business Operations</h3>
+                    <p class="text-gray-600">
+                        Your information helps us operate and improve our business, including internal functions like accounting, auditing, data analysis, research, and development. We may use aggregated, anonymized data for business intelligence purposes, such as identifying service trends, measuring marketing campaign effectiveness, and making strategic decisions about service offerings and business growth.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">17. Customer Support</h3>
+                    <p class="text-gray-600">
+                        We use your information to provide effective customer support, respond to your service inquiries, troubleshoot problems, and resolve any issues you may encounter with our services. Maintaining accurate records of our interactions helps us deliver consistent, high-quality support and ensures we can reference previous communications for context when addressing new inquiries or concerns.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">18. Service Personalization</h3>
+                    <p class="text-gray-600">
+                        The information you provide helps us personalize your experience with our services, from initial consultations through project completion. This includes tailoring design recommendations to your aesthetic preferences, scheduling services at convenient times, and providing maintenance reminders based on your specific landscape needs. Personalization enhances service quality and ensures we meet your unique requirements.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">19. Security Measures</h3>
+                    <p class="text-gray-600">
+                        We use collected information to maintain the security of our services and prevent fraudulent activity. This includes monitoring for suspicious account activity, verifying user identities when necessary, and implementing measures to protect against unauthorized access to your personal data. Security-related processing helps safeguard both our business operations and your sensitive information.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">20. Contractual Obligations</h3>
+                    <p class="text-gray-600">
+                        We process your information as necessary to fulfill our contractual obligations to you, such as executing service agreements, processing payments, and delivering the landscaping services you've requested. This includes sharing limited information with subcontractors or suppliers when essential for completing your project, always with appropriate confidentiality protections in place.
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-12">How We Protect Your Information</h2>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">21. Data Security Measures</h3>
+                    <p class="text-gray-600">
+                        We implement appropriate security measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal information. These measures include encryption of sensitive data, secure servers, regular security audits, and access controls that limit employee access to personal data based on job requirements. Our security protocols are regularly reviewed and updated to address emerging threats and maintain compliance with industry standards.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">22. Employee Training</h3>
+                    <p class="text-gray-600">
+                        All employees are trained on the importance of data privacy and security. We conduct regular training sessions to ensure that our team understands their responsibilities regarding the handling of personal information. Employees are educated on recognizing potential security threats, following best practices for data protection, and adhering to our privacy policies. This training helps foster a culture of security awareness within our organization.
+
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">23. Data Retention Policy</h3>
+                    <p class="text-gray-600">
+                        We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, comply with legal obligations, resolve disputes, and enforce our agreements. Once your information is no longer needed, we securely delete or anonymize it to prevent unauthorized access. Our data retention policy is regularly reviewed to ensure compliance with applicable laws and regulations.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">24. Access Controls</h3>
+                    <p class="text-gray-600">
+                        Access to personal information is restricted to authorized personnel who require it to perform their job functions. We implement role-based access controls to ensure that employees can only access the information necessary for their specific roles. This minimizes the risk of unauthorized access and helps protect your data from potential breaches.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">25. Incident Response Plan</h3>
+                    <p class="text-gray-600">
+                        In the event of a data breach or security incident, we have a comprehensive incident response plan in place. This plan outlines the steps we will take to investigate the incident, mitigate any potential harm, notify affected individuals, and comply with legal requirements. Our response team is trained to act swiftly and effectively to protect your information and restore security.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">26. Third-Party Security Practices</h3>
+                    <p class="text-gray-600">
+                        We carefully vet third-party service providers to ensure they adhere to strict security and privacy standards. Contracts with these providers include provisions for data protection, confidentiality, and compliance with applicable laws. We regularly review their security practices to ensure they align with our commitment to safeguarding your information.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">27. Data Encryption</h3>
+                    <p class="text-gray-600">
+                        Sensitive information, such as payment details, is encrypted during transmission and storage to protect it from unauthorized access. We use industry-standard encryption protocols to ensure that your data remains secure while being processed or stored. This encryption helps safeguard your information from potential interception or breaches.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">28. Regular Security Audits</h3>
+                    <p class="text-gray-600">
+                        We conduct regular security audits and assessments to evaluate the effectiveness of our data protection measures. These audits help identify potential vulnerabilities and areas for improvement, allowing us to enhance our security protocols continuously. We take the findings from these audits seriously and implement necessary changes to strengthen our defenses.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">29. User Rights</h3>
+                    <p class="text-gray-600">
+                        You have certain rights regarding your personal information, including the right to access, correct, or delete your data. You may also have the right to restrict or object to the processing of your information in certain circumstances. To exercise these rights, please contact us using the information provided in this Privacy Policy, and we will respond to your request in accordance with applicable laws.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">30. Changes to This Privacy Policy</h3>
+                    <p class="text-gray-600">
+                        We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting a notice on our website or sending you an email. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information.
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-12">Contact Us</h2>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">31. Contact Information</h3>
+                    <p class="text-gray-600">
+                        If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
+                    </p>
+                    <p class="text-gray-600">
+                        Nestelle Greens<br>
+                        4 Washington Square N, New York, NY 10003, USA<br>
+                        Phone: (888) 255-6699<br>
+                        Email: support@nestellegreens.com
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">32. Feedback and Complaints</h3>
+                    <p class="text-gray-600">
+                        We value your feedback and are committed to addressing any concerns you may have regarding our privacy practices. If you believe that we have not adhered to this Privacy Policy or have any complaints about our handling of your personal information, please contact us using the information above. We will investigate your concerns and respond promptly.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">33. Data Breach Notification</h3>
+                    <p class="text-gray-600">
+                        In the unlikely event of a data breach that compromises your personal information, we will notify you as required by law. This notification will include details about the nature of the breach, the information affected, and the steps we are taking to address the situation. We will also provide guidance on how you can protect yourself from potential harm.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">34. International Data Transfers</h3>
+                    <p class="text-gray-600">
+                        If you are located outside the United States and choose to provide us with personal information, please note that we may transfer your data to the United States and process it there. The data protection laws in the United States may differ from those in your jurisdiction. By providing your information, you consent to the transfer of your data to the United States and the use of your information as described in this Privacy Policy.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">35. Third-Party Links</h3>
+                    <p class="text-gray-600">
+                        Our website may contain links to third-party websites that are not operated by us. We have no control over the content and practices of these sites and cannot accept responsibility for their privacy policies. We encourage you to review the privacy policies of any third-party sites you visit to understand how they collect and use your information.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">36. User Consent</h3>
+                    <p class="text-gray-600">
+                        By using our website and services, you consent to the collection and use of your personal information as outlined in this Privacy Policy. If you do not agree with our practices, please do not use our website or services. You have the right to withdraw your consent at any time, subject to legal or contractual restrictions.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">37. Privacy Policy Updates</h3>
+                    <p class="text-gray-600">
+                        We may update this Privacy Policy periodically to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting a notice on our website or sending you an email. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">38. Data Minimization</h3>
+                    <p class="text-gray-600">
+                        We adhere to the principle of data minimization, meaning we only collect and process personal information that is necessary for the purposes outlined in this Privacy Policy. We regularly review our data collection practices to ensure we are not collecting excessive information and that we are only retaining data that serves a legitimate business purpose.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">39. Privacy by Design</h3>
+                    <p class="text-gray-600">
+                        We incorporate privacy considerations into our business processes and systems from the outset. This "privacy by design" approach ensures that we proactively consider privacy implications when developing new services, features, or technologies. We aim to embed privacy protections into our operations to enhance the security of your personal information.
+                    </p>
+                </div>
+
+                <div class="privacy-point">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">40. Contacting Us</h3>
+                    <p class="text-gray-600">
+                        If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
+                    </p>
+                    <p class="text-gray-600">
+                        Nestelle Greens<br>
+                        4 Washington Square N, New York, NY 10003, USA<br>
+                        Phone: (888) 255-6699<br>
+                        Email: support@nestellegreens.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">Nestelle Greens</p>
+            <p class="mb-2">4 Washington Square N, New York, NY 10003, USA</p>
+            <p class="mb-2">Phone: (888) 255-6699</p>
+            <p class="mb-2">© 2023 Nestelle Greens. All rights reserved.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.facebook.com" class="footer-link">Facebook</a>
+                <a href="https://www.instagram.com" class="footer-link">Instagram</a>
+                <a href="https://www.twitter.com" class="footer-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
